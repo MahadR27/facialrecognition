@@ -793,7 +793,7 @@ def webrtc_login_ui():
             st.success(f"✅ Logged in as {st.session_state.get('login_expected_user','')} (streak met).");
         st.caption(f"Warnings: {vp.alert_count}/{WARNING_LIMIT} • Streak: {vp.verified_streak}/{REQUIRED_CONSEC_MATCHES}")
 
-elif mode == "Web (Cloud)":
+if mode == "Web (Cloud)":
     st.subheader("🌐 Web (Cloud) Demo")
     st.caption("Uses your **browser camera** via WebRTC. Great for Streamlit Cloud/HF Spaces.")
     tabs = st.tabs(["Register (WebRTC)", "Login (WebRTC)"])
