@@ -1,0 +1,6 @@
+streamlit==1.*
+opencv-contrib-python
+numpy
+streamlit-webrtc
+av
+aiortc
